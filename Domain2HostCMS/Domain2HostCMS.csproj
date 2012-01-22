@@ -1,0 +1,328 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BCE74F21-B02D-4DCE-8CC0-870255512739}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Domain2HostCMS</RootNamespace>
+    <AssemblyName>Domain2HostCMS</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Domain2HostCMSDL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Domain2HostCMSDL\bin\Debug\Domain2HostCMSDL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files\Microsoft ASP.NET\ASP.NET MVC 2\\Assemblies\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="Telerik.OpenAccess, Version=2009.1.405.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess.Query, Version=2009.1.405.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ControlpanelController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\ControlpanelModel.cs" />
+    <Compile Include="Models\ImageModel.cs" />
+    <Compile Include="ObjectScopeProvider1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\elrte-inner.css" />
+    <Content Include="Content\elrte.full.css" />
+    <Content Include="Content\elrte.min.css" />
+    <Content Include="Content\FormLayout.css" />
+    <Content Include="Content\products.css" />
+    <Content Include="Content\profile.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\smoothness\jquery-ui-1.8.13.custom.css" />
+    <Content Include="Content\staff.css" />
+    <Content Include="Content\technology.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\arrows.gif" />
+    <Content Include="Images\elrte-toolbar.png" />
+    <Content Include="Images\google-maps.png" />
+    <Content Include="Images\iframe.png" />
+    <Content Include="Images\leftbg.png" />
+    <Content Include="Images\loading.gif" />
+    <Content Include="Images\media-director.png" />
+    <Content Include="Images\media-flash.png" />
+    <Content Include="Images\media-quicktime.png" />
+    <Content Include="Images\media-realaudio.png" />
+    <Content Include="Images\media-rutube.png" />
+    <Content Include="Images\media-vimeo.png" />
+    <Content Include="Images\media-winmedia.png" />
+    <Content Include="Images\media-youtube.png" />
+    <Content Include="Images\outline-div.png" />
+    <Content Include="Images\outline-p.png" />
+    <Content Include="Images\pagebreak.gif" />
+    <Content Include="Images\sq\bot.jpg" />
+    <Content Include="Images\sq\c1.jpg" />
+    <Content Include="Images\sq\c2.jpg" />
+    <Content Include="Images\sq\c3.jpg" />
+    <Content Include="Images\sq\c4.jpg" />
+    <Content Include="Images\sq\spacer.jpg" />
+    <Content Include="Images\sq\spacer1.jpg" />
+    <Content Include="Images\sq\top.jpg" />
+    <Content Include="Scripts\Controlpanel.js" />
+    <Content Include="Scripts\elrte.full.js" />
+    <Content Include="Scripts\elrte.min.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-1.6.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.13.custom.min.js" />
+    <Content Include="Views\Shared\Error.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\sq\Thumbs.db" />
+    <Content Include="Content\dynamicContent.css" />
+    <Content Include="Content\home.css" />
+    <Content Include="Content\jquery-ui-1.8.16.custom.css" />
+    <Content Include="Content\SpryMenuBarHorizontal.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="Content\stylesheet_default.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Images\203708.jpg" />
+    <Content Include="Images\211826.jpg" />
+    <Content Include="Images\216794.jpg" />
+    <Content Include="Images\226138.jpg" />
+    <Content Include="Images\236872.jpg" />
+    <Content Include="Images\242177.jpg" />
+    <Content Include="Images\242702.jpg" />
+    <Content Include="Images\all-icon.png" />
+    <Content Include="Images\arrow_hover.png" />
+    <Content Include="Images\arrow_up.png" />
+    <Content Include="Images\banner.png" />
+    <Content Include="Images\bg-brown.jpg" />
+    <Content Include="Images\bg-feature-groups-8.png" />
+    <Content Include="Images\bg-feature-sites-8.png" />
+    <Content Include="Images\bg-footer.jpg" />
+    <Content Include="Images\bg-footer.png" />
+    <Content Include="Images\bg-gray.jpg" />
+    <Content Include="Images\bg-grey-shadow.gif" />
+    <Content Include="Images\bg-nav-hover.gif" />
+    <Content Include="Images\bg-one-pixel.gif" />
+    <Content Include="Images\bg-pricing-nav.png" />
+    <Content Include="Images\bg-selling-option-nav.png" />
+    <Content Include="Images\bg-slab-shadow.gif" />
+    <Content Include="Images\bg-yellow.jpg" />
+    <Content Include="Images\bg.jpg" />
+    <Content Include="Images\bottom-bg.png" />
+    <Content Include="Images\brandlogo.png" />
+    <Content Include="Images\clear.gif" />
+    <Content Include="Images\divider-bottom.png" />
+    <Content Include="Images\DomainRegistration.gif" />
+    <Content Include="Images\Edit.gif" />
+    <Content Include="Images\flash1.jpg" />
+    <Content Include="Images\footer-card-logo.jpg" />
+    <Content Include="Images\gradient.png" />
+    <Content Include="Images\header-bg.gif" />
+    <Content Include="Images\header-bg.jpg" />
+    <Content Include="Images\home-product-bg.gif" />
+    <Content Include="Images\home-repeat-bg.jpg" />
+    <Content Include="Images\home-repeat-bg.png" />
+    <Content Include="Images\ico-delete.gif" />
+    <Content Include="Images\logo.jpg" />
+    <Content Include="Images\Logo.png" />
+    <Content Include="Images\menu-2nd-level-hover.gif" />
+    <Content Include="Images\middle-bg.jpg" />
+    <Content Include="Images\navigation.png" />
+    <Content Include="Images\pitch_arrow.png" />
+    <Content Include="Images\please-wait.gif" />
+    <Content Include="Images\searchnow.jpg" />
+    <Content Include="Images\seclinks-sep.gif" />
+    <Content Include="Images\top-bg.png" />
+    <Content Include="Images\viewall.jpg" />
+    <Content Include="Scripts\AC_RunActiveContent.js" />
+    <Content Include="Scripts\crawler.js" />
+    <Content Include="Scripts\jquery-1.6.2.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.16.custom.min.js" />
+    <Content Include="Scripts\JQValidation.js" />
+    <Content Include="Scripts\SpryMenuBar.js" />
+    <Content Include="Views\Account\ChangePassword.aspx" />
+    <Content Include="Views\Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Views\Account\LogOn.aspx" />
+    <Content Include="Views\Account\Register.aspx" />
+    <Content Include="Views\Controlpanel\AddImage.aspx" />
+    <Content Include="Views\Controlpanel\AddMenu.aspx" />
+    <Content Include="Views\Controlpanel\AddPage.aspx" />
+    <Content Include="Views\Controlpanel\EditMenu.aspx" />
+    <Content Include="Views\Controlpanel\EditPage.aspx" />
+    <Content Include="Views\Controlpanel\Images.aspx" />
+    <Content Include="Views\Controlpanel\Index.aspx" />
+    <Content Include="Views\Controlpanel\menus.aspx" />
+    <None Include="Web.config.server" />
+    <Content Include="Content\Ajaxaddimage.css" />
+    <Content Include="Content\jquery.fancybox-1.3.4.css" />
+    <Content Include="Content\layout.css" />
+    <Content Include="Content\layout1.css" />
+    <Content Include="fancybox\blank.gif" />
+    <Content Include="fancybox\fancybox-x.png" />
+    <Content Include="fancybox\fancybox-y.png" />
+    <Content Include="fancybox\fancybox.png" />
+    <Content Include="fancybox\fancy_close.png" />
+    <Content Include="fancybox\fancy_loading.png" />
+    <Content Include="fancybox\fancy_nav_left.png" />
+    <Content Include="fancybox\fancy_nav_right.png" />
+    <Content Include="fancybox\fancy_shadow_e.png" />
+    <Content Include="fancybox\fancy_shadow_n.png" />
+    <Content Include="fancybox\fancy_shadow_ne.png" />
+    <Content Include="fancybox\fancy_shadow_nw.png" />
+    <Content Include="fancybox\fancy_shadow_s.png" />
+    <Content Include="fancybox\fancy_shadow_se.png" />
+    <Content Include="fancybox\fancy_shadow_sw.png" />
+    <Content Include="fancybox\fancy_shadow_w.png" />
+    <Content Include="fancybox\fancy_title_left.png" />
+    <Content Include="fancybox\fancy_title_main.png" />
+    <Content Include="fancybox\fancy_title_over.png" />
+    <Content Include="fancybox\fancy_title_right.png" />
+    <Content Include="Images\yandex-maps.png" />
+    <Content Include="Scripts\jquery-fieldselection.js" />
+    <Content Include="Scripts\jquery.fancybox-1.3.4.pack.js" />
+    <Content Include="Scripts\jquery.mousewheel-3.0.4.pack.js" />
+    <Content Include="Views\Controlpanel\Ajaxaddimage.aspx" />
+    <Content Include="Views\Controlpanel\Ctrladdimage.ascx" />
+    <Content Include="Views\Controlpanel\InsertImage.aspx" />
+    <Content Include="Views\Controlpanel\Pages.aspx" />
+    <Content Include="Views\Shared\Site.Master" />
+    <Content Include="Views\Shared\Status.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1737</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <UserProperties OpenAccess_EnhancementOutputLevel="1" OpenAccess_UpdateDatabase="False" OpenAccess_Enhancing="False" OpenAccess_ConnectionId="DatabaseConnection1" OpenAccess_ConfigFile="Web.config" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

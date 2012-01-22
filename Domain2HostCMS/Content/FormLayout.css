@@ -1,0 +1,263 @@
+FORM
+{
+	padding: 0px;
+	margin: 0px;
+	background-color: #EFEFED;
+	-moz-border-radius: 12px;
+	-khtml-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	border-radius: 12px;
+}
+.ul
+{
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 5px 10px 10px 30px;
+}
+.ul LI
+{
+	margin: 0px;
+	padding-bottom: 5px;
+}
+.ul H2, H3, LABEL
+{
+	margin: 0px;
+	padding: 0px;
+	color: #444;
+}
+.h2
+{
+	display: block;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+.label
+{
+	display: block;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.loginContent
+{
+	font-size: 1.1em;
+	font-family: Arial, Helvetica, Sans-Serif;
+	text-align: left;
+	width: 800px;
+	margin: 20px 20px 20px -50px;
+}
+.loginContent .text-box
+{
+	width: 30em;
+}
+.loginContent .text-box.multi-line
+{
+	height: 6.5em;
+}
+.loginContent .tri-state
+{
+	width: 6em;
+}
+.loginContent P, UL
+{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.loginContent UL LI
+{
+	margin-top: 5px;
+	color: #444444;
+}
+INPUT[type="button"], INPUT[type="submit"], INPUT[type="file"]
+{
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+.loginContent INPUT[type="text"], INPUT[type="password"], TEXTAREA, INPUT[type="file"]
+{
+	width: 385px;
+	padding: 5px;
+	margin: 0px;
+	border: 1px solid #A8E1C7;
+	background-color: #F8FEFC;
+}
+.loginContent INPUT[type="button"], INPUT[type="submit"]
+{
+	border: 1px solid #666;
+	padding: 5px;
+	cursor: pointer;
+	width: 100px;
+	margin-top: 5px;
+	background: #444;
+	text-align: center;
+	border: 1px solid #AAA;
+	background-color: #F8FEFC;
+	padding: 8px;
+	cursor: pointer;
+	width: 160px;
+}
+.loginContent INPUT[type="file"]
+{
+	border: 1px solid #AAA;
+	background-color: #F8FEFC;
+	padding: 5px;
+	cursor: pointer;
+	width: 390px;
+}
+.loginContent SELECT
+{
+	width: 400px;
+	padding: 3px;
+	margin: 0px;
+	color: #333;
+	background: #F8FEFC;
+}
+INPUT[type="text"]:focus, INPUT[type="password"]:focus, SELECT:focus, TEXTAREA:focus
+{
+	background-color: #FAFBD4;
+	color: #111;
+}
+INPUT[type="submit"]:hover, INPUT[type="button"]:hover
+{
+	background-color: #FFFDD8;
+}
+INPUT[type="submit"]:focus, INPUT[type="button"]:focus
+{
+	background-color: #FFFDD8;
+}
+/*MISC
+----------------------------------------------------------*/
+.clear
+{
+	clear: both;
+}
+.error, .validation-summary-errors UL LI
+{
+	color: #E15151;
+}
+.UserInfo
+{
+	text-align: right;
+	text-decoration: none;
+	padding-right: 5px;
+}
+.UserInfo *
+{
+	padding: 3px;
+}
+.UserInfo A
+{
+	text-decoration: none;
+	font: 1em Arial;
+	color: #AAA;
+}
+.checkout
+{
+	padding-top: 15px;
+	padding-left: 5px;
+}
+.loginContent .rightbox
+{
+	text-align: right;
+	margin: 0px;
+	padding: 5px;
+}
+.empty-row TD
+{
+	text-align: center;
+	height: 30px;
+}
+.edit_confirm_button, .delete_button, .edit_button, .edit_cancel_button, .restore_button
+{
+	cursor: pointer;
+}
+.container
+{
+	margin: 10px -5px;
+	padding: 0px;
+}
+.container .left, .right, .middle
+{
+	float: left;
+	width: 163px;
+	background: #222;
+	padding: 10px;
+	margin: 5px 5px 5px 35px;
+	text-align: center;
+}
+.container .middle
+{
+	float: none;
+	width: 845px;
+}
+.container .right
+{
+	text-align: center;
+}
+.small
+{
+	width: 300px;
+}
+.product_image
+{
+	cursor: pointer;
+	width: 200px;
+	height: 150px;
+}
+.delivery
+{
+	display: none;
+}
+.field-validation-error
+{
+	color: #FF0000;
+}
+.errorinfo
+{
+	border: 1px solid #EA144A;
+}
+#Cart_Table THEAD
+{
+	text-align: left;
+	font: 1.1em sans-serif;
+	background: #E4E4CF url(#);
+	padding: 0px 0;
+	color: #555;
+}
+#Cart_Table THEAD TH, TD
+{
+	padding: 5px;
+	margin: 0px;
+}
+#Cart_Table
+{
+	border: 1px solid #DBDBDB;
+	color: #333;
+	background: #F5F8F7;
+}
+#Cart_Table TBODY TR:nth-child(even)
+{
+	background: #F1F1EB;
+}
+#Cart_Table A
+{
+	text-decoration: none;
+	color: #555;
+	font: 0.9em Arial;
+}
+#Cart_Table IMG
+{
+	margin: 0px 0 -3px;
+}
+.ul H2
+{
+	font: bold 1.2em Arial;
+}
+.loginContent P
+{
+	font: bold 1em Arial;
+	color: #3C352B;
+}

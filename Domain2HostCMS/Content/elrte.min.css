@@ -1,0 +1,879 @@
+/*!
+* elRTE WYSIWYG HTML-editor
+* Version 1.3 (2011-06-23)
+* http://elrte.org
+*
+* Copyright 2009-2011, Studio 42 Ltd.
+* Licensed under a 3 clauses BSD license
+ */
+A
+{
+	outline: 0;
+}
+.clearfix:after
+{
+	content: ".";
+	display: block;
+	font-size: 0;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix
+{
+	display: block;
+}
+.rounded-2
+{
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+.rounded-3
+{
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+.rounded-4
+{
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+.rounded-5
+{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.rounded-6
+{
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 5px;
+	border-radius: 6px;
+}
+.rounded-7
+{
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+}
+.rounded-left-3
+{
+	-moz-border-radius-topleft: 3px;
+	-webkit-border-top-left-radius: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+}
+.rounded-bottom-7
+{
+	-moz-border-radius-bottomleft: 7px;
+	-moz-border-radius-bottomright: 7px;
+	-webkit-border-bottom-left-radius: 7px;
+	-webkit-border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+}
+.ui-widget
+{
+	font-size: 0.9em;
+}
+.ui-dialog .ui-dialog-buttonpane BUTTON
+{
+	padding: 0.1em 0.6em 0.2em;
+}
+.el-colorpicker
+{
+	width: 16px;
+	height: 16px;
+	border: 1px solid #CCC;
+	position: relative;
+	cursor: default;
+}
+.el-palette
+{
+	width: 182px;
+	border: 1px solid #CCC;
+	background: #FFF;
+	padding: 3px 2px 3px 3px;
+	z-index: 99000;
+	position: absolute;
+	top: 16px;
+	left: 0;
+}
+.el-palette .color
+{
+	float: left;
+	width: 14px;
+	height: 14px;
+	line-height: 1px;
+	border-top: 1px solid #EEE;
+	border-left: 1px solid #EEE;
+}
+.el-palette .panel
+{
+	border-top: 1px solid #CCC;
+	margin-top: 7px;
+	padding: 5px 3px;
+}
+.el-palette .panel .preview
+{
+	float: right;
+	width: 18px;
+	height: 18px;
+	border: 1px solid #CCC;
+}
+.el-palette .panel INPUT
+{
+	border: 1px solid #CCC;
+}
+.ui-widget .el-dialogform
+{
+	padding: 5px 3px;
+}
+.ui-widget .el-dialogform-rtl
+{
+	direction: rtl;
+}
+.ui-widget .el-dialogform-rtl .ui-tabs-nav LI
+{
+	float: right;
+}
+.el-dialogform DIV.tab:hover
+{
+	background: transparent;
+}
+.ui-dialog .ui-dialog-title, .ui-dialog .ui-dialog-content
+{
+	font-size: 0.9em;
+}
+.ui-tabs .ui-tabs-nav LI A
+{
+	padding: 0.2em 0.7em;
+}
+.el-dialogform .tab
+{
+	padding: 5px 0 12px;
+	border: 0;
+}
+.el-dialogform .separator
+{
+	border-top: 1px solid #CCC;
+	margin: 5px 2px;
+}
+.el-dialogform TABLE
+{
+	width: 100%;
+	border: 0;
+}
+.el-dialogform TABLE TD
+{
+	padding: 2px;
+}
+.el-dialogform INPUT, .el-dialogform TEXTAREA
+{
+	border: 1px solid #CCC;
+}
+.el-dialogform SELECT
+{
+	padding: 0;
+}
+.el-dialogform .spinner
+{
+	background: url(/images/loading.gif) no-repeat 50% 50%;
+	text-align: center;
+	width: 150px;
+	height: 50px;
+	margin: 10px auto;
+	padding-top: 33px;
+	font-weight: bold;
+}
+.el-dialogform-error
+{
+	background: #FEE;
+	color: #F00;
+	border: 2px solid #844;
+	padding: 10px;
+	margin-bottom: 1em 0;
+}
+.el-dialogform-message
+{
+	background: #EFE;
+	color: #040;
+	border: 2px solid #484;
+	padding: 10px;
+	margin-bottom: 1em 0;
+}
+.el-dialogform TABLE TD .el-borderselect TABLE
+{
+	width: auto;
+}
+.el-dialogform TABLE TD .el-borderselect TABLE TD
+{
+	padding-left: 0;
+	padding-right: 2px;
+}
+.el-paddinginput
+{
+	display: block;
+	white-space: nowrap;
+}
+.el-paddinginput INPUT
+{
+	margin: 0 1px 0 0;
+	border: 1px solid #CCC;
+}
+.el-paddinginput SELECT
+{
+	padding: 0;
+}
+.el-select
+{
+	height: 17px;
+	width: 110px;
+	border: 1px solid #CCC;
+	cursor: default;
+	position: relative;
+}
+.el-select.hover
+{
+	background-color: #EEE;
+}
+.el-select LABEL
+{
+	height: 17px;
+	line-height: 17px;
+	padding: 0 5px;
+	margin: 0 12px 0 0;
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	background: #FFF;
+	border-right: 1px solid #CCC;
+}
+.el-select .list
+{
+	border: 1px solid #CCC;
+	display: block;
+	position: absolute;
+	overflow: auto;
+	background: #FFF;
+	z-index: 1000;
+}
+.el-select .list DIV
+{
+	position: relative;
+	padding: 3px 25px 3px 7px;
+	border-bottom: 1px solid #EEE;
+}
+.el-select .list .hover
+{
+	background: #EFEFEF;
+}
+.el-select .list .active
+{
+	background-color: #C3DBEF;
+}
+.el-select .list DIV *
+{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	white-space: nowrap;
+	display: block;
+}
+.el-rte
+{
+	font-family: "Trebuchet MS", Verdana, Geneva, sans-serif;
+	overflow: hidden;
+}
+.el-rte.el-fullscreen
+{
+	position: absolute;
+	width: 99%;
+	top: 0;
+	left: 0;
+	margin: 0;
+	z-index: 10;
+}
+.elrte-swf-placeholder
+{
+	width: 1px;
+	background: url('/images/swf.png') no-repeat 0 0;
+}
+.elrtetesturl
+{
+	color: #FF0000;
+	background-image: url(/images/pixel.gif);
+}
+.el-rte .toolbar
+{
+	background-color: #EEE;
+	padding: 3px 7px 2px;
+	border: 1px solid #CCC;
+	white-space: normal;
+}
+.el-rte-rtl .toolbar
+{
+	direction: rtl;
+}
+.el-rte .toolbar UL
+{
+	position: relative;
+	display: inline-block;
+	display: -moz-inline-stack;
+	display: inline-block;
+	vertical-align: top;
+	zoom: 1;
+	=display: inline;
+	margin: 0;
+	list-style: none;
+	padding: 0 2px 0 5px;
+	background: url('/images/elrte-toolbar.png') no-repeat -934px -2px;
+}
+.el-rte .toolbar UL.first
+{
+	background: transparent;
+	padding-left: 0;
+}
+.el-rte .toolbar UL LI
+{
+	display: inline-block;
+	display: -moz-inline-stack;
+	display: inline-block;
+	height: 22px;
+	width: 22px;
+	vertical-align: top;
+	zoom: 1;
+	=display: inline;
+	margin: 1px;
+	padding: 0;
+	background: url('/images/elrte-toolbar.png') no-repeat;
+	border: 1px solid #CCC;
+	z-index: 100;
+}
+.el-rte .toolbar UL LI.hover
+{
+	border: 1px solid #54B9BF;
+}
+.el-rte .toolbar UL LI.active
+{
+	background-color: #C3DBEF;
+	border: 1px solid #FFF;
+}
+.el-rte .toolbar UL LI.disabled
+{
+	opacity: alpha(0.3);
+	opacity: .3;
+	filter: Alpha(Opacity=30);
+}
+.el-rte .toolbar UL LI.about
+{
+	background-position: -829px -5px;
+}
+.el-rte .toolbar UL LI.save
+{
+	background-position: -30px -2px;
+}
+.el-rte .toolbar UL LI.new
+{
+	background-position: -55px -2px;
+}
+.el-rte .toolbar UL LI.copy
+{
+	background-position: -78px -2px;
+}
+.el-rte .toolbar UL LI.css
+{
+	background-position: -801px -5px;
+}
+.el-rte .toolbar UL LI.cut
+{
+	background-position: -104px -2px;
+}
+.el-rte .toolbar UL LI.paste
+{
+	background-position: -128px -2px;
+}
+.el-rte .toolbar UL LI.pastetext
+{
+	background-position: -534px -2px;
+}
+.el-rte .toolbar UL LI.pasteformattext
+{
+	background-position: -154px -2px;
+}
+.el-rte .toolbar UL LI.removeformat
+{
+	background-position: -180px -2px;
+}
+.el-rte .toolbar UL LI.docstructure
+{
+	background-position: -712px -4px;
+}
+.el-rte .toolbar UL LI.undo
+{
+	background-position: -205px -2px;
+}
+.el-rte .toolbar UL LI.redo
+{
+	background-position: -230px -2px;
+}
+.el-rte .toolbar UL LI.bold
+{
+	background-position: -252px -2px;
+}
+.el-rte .toolbar UL LI.italic
+{
+	background-position: -270px -2px;
+}
+.el-rte .toolbar UL LI.underline
+{
+	background-position: -290px -2px;
+}
+.el-rte .toolbar UL LI.strikethrough
+{
+	background-position: -149px -29px;
+}
+.el-rte .toolbar UL LI.subscript
+{
+	background-position: -54px -29px;
+}
+.el-rte .toolbar UL LI.superscript
+{
+	background-position: -76px -29px;
+}
+.el-rte .toolbar UL LI.justifyleft
+{
+	background-position: -311px -2px;
+}
+.el-rte .toolbar UL LI.justifycenter
+{
+	background-position: -335px -2px;
+}
+.el-rte .toolbar UL LI.justifyright
+{
+	background-position: -360px -2px;
+}
+.el-rte .toolbar UL LI.justifyfull
+{
+	background-position: -174px -29px;
+}
+.el-rte .toolbar UL LI.insertunorderedlist
+{
+	background-position: -100px -29px;
+}
+.el-rte .toolbar UL LI.insertorderedlist
+{
+	background-position: -124px -29px;
+}
+.el-rte .toolbar UL LI.outdent
+{
+	background-position: -6px -29px;
+}
+.el-rte .toolbar UL LI.indent
+{
+	background-position: -32px -29px;
+}
+.el-rte .toolbar UL LI.blockquote
+{
+	background-position: -220px -30px;
+}
+.el-rte .toolbar UL LI.div
+{
+	background-position: -655px -29px;
+}
+.el-rte .toolbar UL LI.stopfloat
+{
+	background-position: -771px -5px;
+}
+.el-rte .toolbar UL LI.nbsp
+{
+	background-position: -580px -2px;
+}
+.el-rte .toolbar UL LI.forecolor
+{
+	background-position: -372px -30px;
+}
+.el-rte .toolbar UL LI.hilitecolor
+{
+	background-position: -395px -30px;
+}
+.el-rte .toolbar UL LI.link
+{
+	background-position: -244px -29px;
+}
+.el-rte .toolbar UL LI.unlink
+{
+	background-position: -270px -29px;
+}
+.el-rte .toolbar UL LI.anchor
+{
+	background-position: -296px -30px;
+}
+.el-rte .toolbar UL LI.image
+{
+	background-position: -384px -2px;
+}
+.el-rte .toolbar UL LI.flash
+{
+	background-position: -410px -2px;
+}
+.el-rte .toolbar UL LI.file
+{
+	background-position: -436px -3px;
+}
+.el-rte .toolbar UL LI.table
+{
+	background-position: -421px -30px;
+}
+.el-rte .toolbar UL LI.tableprops
+{
+	background-position: -602px -29px;
+}
+.el-rte .toolbar UL LI.tbcellprops
+{
+	background-position: -806px -27px;
+}
+.el-rte .toolbar UL LI.tablerm
+{
+	background-position: -461px -2px;
+}
+.el-rte .toolbar UL LI.tbrowbefore
+{
+	background-position: -683px -4px;
+}
+.el-rte .toolbar UL LI.tbrowafter
+{
+	background-position: -654px -4px;
+}
+.el-rte .toolbar UL LI.tbrowrm
+{
+	background-position: -500px -30px;
+}
+.el-rte .toolbar UL LI.tbcolbefore
+{
+	background-position: -741px -27px;
+}
+.el-rte .toolbar UL LI.tbcolafter
+{
+	background-position: -772px -27px;
+}
+.el-rte .toolbar UL LI.tbcolrm
+{
+	background-position: -526px -30px;
+}
+.el-rte .toolbar UL LI.tbcellsmerge
+{
+	background-position: -552px -30px;
+}
+.el-rte .toolbar UL LI.tbcellsplit
+{
+	background-position: -629px -29px;
+}
+.el-rte .toolbar UL LI.smiley
+{
+	background-position: -322px -29px;
+}
+.el-rte .toolbar UL LI.spec-text
+{
+	background-position: -487px -2px;
+}
+.el-rte .toolbar UL LI.print
+{
+	background-position: -509px -2px;
+}
+.el-rte .toolbar UL LI.horizontalrule
+{
+	background-position: -199px -29px;
+}
+.el-rte .toolbar UL LI.fullscreen
+{
+	background-position: -348px -30px;
+}
+.el-rte .toolbar UL LI.elfinder
+{
+	background-position: -436px -2px;
+}
+.el-rte .toolbar UL LI.ltr
+{
+	background-position: -855px -27px;
+}
+.el-rte .toolbar UL LI.rtl
+{
+	background-position: -855px -3px;
+}
+.el-rte .toolbar UL LI.pagebreak
+{
+	background-position: -711px -28px;
+}
+.el-rte .workzone
+{
+	border: 1px solid #EEE;
+	border-top: 0;
+	height: 400px;
+	overflow: hidden;
+}
+.el-rte.small .workzone
+{
+	min-height: 250px;
+}
+.el-rte TEXTAREA
+{
+	width: 100%;
+	height: 100%;
+	border: 0;
+	zoom: 1;
+	padding: 0;
+	outline: 0;
+}
+.el-rte.small TEXTAREA
+{
+	min-height: 250px;
+}
+.el-rte IFRAME
+{
+	width: 100%;
+	height: 400px;
+	display: block;
+	outline: 0;
+	border: 0 solid #000000;
+	padding: 0;
+	margin: 0;
+	background: #FFF;
+}
+.el-rte.small IFRAME
+{
+	min-height: 250px;
+}
+.el-rte .statusbar
+{
+	height: 21px;
+	padding: 0 9px;
+	font: 11px/21px monaco, "andale mono", "lucida console", monospace;
+	background-color: #EEE;
+	border-top: 1px solid #CCC;
+	border-top: 0;
+}
+.el-rte-rtl .statusbar
+{
+	direction: rtl;
+}
+.el-rte .tabsbar
+{
+	display: block;
+}
+.el-rte .tabsbar .tab
+{
+	float: left;
+	margin-right: 2px;
+	padding: 6px 17px;
+	font-size: 0.82em;
+	font-weight: bold;
+	color: #777;
+	text-align: center;
+	border: 1px solid #EEE;
+	border-top: 0;
+	background: #FFF;
+	cursor: default;
+}
+.el-rte .tabsbar DIV.active
+{
+	background: #EEE;
+	color: #444;
+}
+.el-rte-rtl .tabsbar .tab
+{
+	float: right;
+}
+.el-rte .toolbar UL LI.el-select
+{
+	height: 22px;
+	width: 120px;
+	border: 1px solid #CCC;
+	font-size: 0.82em;
+	cursor: default;
+	background-position: -475px -30px;
+}
+.el-rte .toolbar UL LI.el-select.hover
+{
+	background-color: #FEFEFE;
+}
+.el-rte .toolbar UL LI.el-select LABEL
+{
+	height: 19px;
+	padding: 3px 5px 0;
+	float: none;
+	width: 96px;
+}
+.el-rte-paste-input
+{
+	width: 99%;
+	height: 250px;
+	border: 1px solid #CCC;
+	padding: 0;
+	margin: 0;
+	outline: 0;
+}
+.el-rte .toolbar UL LI DIV.color-indicator
+{
+	width: 18px;
+	height: 4px;
+	margin: 16px 0 2px 2px;
+	background-color: #000;
+}
+.el-rte-rtl .toolbar UL LI DIV.color-indicator
+{
+	margin: 16px 2px 2px 0;
+}
+.el-rte .toolbar .panel-format
+{
+	z-index: 10;
+}
+.el-palette
+{
+	top: 20px;
+}
+.el-dialogform, .el-dialogform TD
+{
+	font-size: 0.9em;
+}
+.el-dialogform SELECT
+{
+	font-size: 0.9em;
+}
+.ui-dialog .ui-dialog-buttonpane
+{
+	padding: 0.4em 1em;
+}
+.ui-dialog .ui-dialog-buttonpane BUTTON
+{
+	margin: 0.3em 0.4em 0.1em 0;
+	font-size: 0.9em;
+}
+.ui-dialog .ui-dialog-titlebar
+{
+	padding: 0.3em 1em;
+}
+.el-dialogform LABEL
+{
+	display: block;
+}
+.el-dialogform LABEL INPUT
+{
+	margin-right: 2px;
+}
+.el-dialogform IFRAME.el-rte-preview
+{
+	width: 100%;
+	height: 235px;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+}
+.el-dialogform FIELDSET
+{
+	border: 1px solid #CCC;
+	padding: 0;
+}
+.el-dialogform FIELDSET LEGEND
+{
+	font-size: 0.9em;
+	padding: 0.1em 0.5em;
+	margin: 0 0 5px 1em;
+	border: 1px solid #CCC;
+	background-color: #EEE;
+}
+.el-dialogform P
+{
+	padding: 0.2em 0.3em;
+}
+.el-dialogform H3
+{
+	color: #555;
+	padding: 1.2em 0 0;
+	margin: 0;
+	font-size: 1.2em;
+}
+.el-dialogform H4
+{
+	color: #555;
+	font-size: 1em;
+	padding: 0;
+	margin: 3px 9px;
+}
+.elrte-logo
+{
+	width: 48px;
+	height: 46px;
+	float: left;
+	margin: 0.5em 1em;
+	background: url('/images/elrte-toolbar.png') no-repeat -880px -7px;
+}
+.elrte-ver
+{
+	font-size: 0.9em;
+	padding-left: 0.7em;
+}
+.elrte-copy
+{
+	font-size: 0.9em;
+	padding-left: 0.3em;
+}
+TABLE.elrte-authors
+{
+	margin-bottom: 1em;
+}
+TABLE.elrte-authors TD
+{
+	border-bottom: 1px solid #EEE;
+}
+.el-borderselect TABLE
+{
+	margin: 0;
+}
+.el-borderselect TABLE TD
+{
+	padding: 0 2px 0 0;
+	vertical-align: middle;
+}
+.el-borderselect INPUT
+{
+	margin: 0;
+	border: 1px solid #CCC;
+}
+.el-paddinginput
+{
+	display: block;
+	white-space: nowrap;
+}
+.el-paddinginput INPUT
+{
+	margin: 0 1px 0 0;
+	border: 1px solid #CCC;
+}
+.el-paddinginput SELECT
+{
+	padding: 0;
+}
+.el-rte-smiley
+{
+	margin: 5px;
+}
+.elrte-image-src-fm .ui-state-default
+{
+	float: right;
+}
+.el-dialogform-rtl .elrte-image-src-fm .ui-state-default
+{
+	float: left;
+}
+.elrte-image-preview
+{
+	font-size: 0.7em;
+	overflow: auto;
+	height: 240px;
+	width: 480px;
+}

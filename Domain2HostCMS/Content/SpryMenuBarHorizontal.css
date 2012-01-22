@@ -1,0 +1,115 @@
+UL.MenuBarHorizontal
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 100%;
+	cursor: default;
+	width: auto;
+}
+UL.MenuBarActive
+{
+	z-index: 1000;
+}
+UL.MenuBarHorizontal LI
+{
+	list-style-type: none;
+	font-size: 100%;
+	position: relative;
+	text-align: left;
+	cursor: pointer;
+	width: auto;
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+UL.MenuBarHorizontal UL
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 100%;
+	z-index: 1020;
+	cursor: default;
+	width: 8.2em;
+	position: absolute;
+	left: -1000em;
+}
+UL.MenuBarHorizontal UL.MenuBarSubmenuVisible
+{
+	left: auto;
+}
+UL.MenuBarHorizontal UL LI
+{
+	width: 8.2em;
+}
+UL.MenuBarHorizontal UL UL
+{
+	position: center;
+	margin: -5% 0 0 95%;
+}
+UL.MenuBarHorizontal UL.MenuBarSubmenuVisible UL.MenuBarSubmenuVisible
+{
+	center: auto;
+	top: 0;
+}
+UL.MenuBarHorizontal UL
+{
+	border: 1px solid #96B9A6;
+}
+UL.MenuBarHorizontal A
+{
+	display: block;
+	cursor: pointer;
+	background-color: #6FA387;
+	padding: 0.5em 1.6em;
+	color: #333;
+	text-decoration: none;
+}
+UL.MenuBarHorizontal A:hover, UL.MenuBarHorizontal A:focus
+{
+	background-color: #245E60;
+}
+UL.MenuBarHorizontal A.MenuBarItemHover, UL.MenuBarHorizontal A.MenuBarItemSubmenuHover, UL.MenuBarHorizontal A.MenuBarSubmenuVisible
+{
+	background-color: #356363;
+	color: #000;
+}
+UL.MenuBarHorizontal A.MenuBarItemSubmenu
+{
+	background-image: url(SpryMenuBarDown.gif);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+}
+UL.MenuBarHorizontal UL A.MenuBarItemSubmenu
+{
+	background-image: url(SpryMenuBarRight.gif);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+}
+UL.MenuBarHorizontal A.MenuBarItemSubmenuHover
+{
+	background-image: url(SpryMenuBarDownHover.gif);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+}
+UL.MenuBarHorizontal UL A.MenuBarItemSubmenuHover
+{
+	background-image: url(SpryMenuBarRightHover.gif);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+}
+UL.MenuBarHorizontal IFRAME
+{
+	position: absolute;
+	z-index: 1010;
+}
+@media screen, projection
+{
+	UL.MenuBarHorizontal LI.MenuBarItemIE
+	{
+		display: inline;
+		f\loat: center;
+		background: #FFF;
+	}
+}

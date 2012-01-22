@@ -1,0 +1,119 @@
+	 /* ----------------------------------------------------------------------------------------- 
+____________________________________________________________________
+
+"Screen" Style Sheet
+
+@Project -
+Description: Design and Developed 2010
+Author: 
+Version: 1.0
+____________________________________________________________________
+
+----------------------------------------------------------------------------------------- */
+
+/*
+=Colours
+Doh!!!
+*/
+
+/* =reset & basics
+----------------------------------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin : 0; padding : 0; border : 0; outline : 0; vertical-align : baseline; background : transparent;
+}
+ol, ul { list-style: none; list-style-image: none; list-style-position: outside; list-style-type: none; }
+del { text-decoration: line-through; }
+.clear{ clear:both;  }
+
+/* =layout / divisions
+----------------------------------------------------------------------------------------- */
+body {
+	margin:0;
+	padding:0;
+	font:12px Arial, Helvetica, sans-serif;
+	color:#ccc;
+	background:#eeeeee;
+	line-height: 18px;
+	
+}
+
+#outerwrapper {
+	margin:0 auto;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	width:1003px;
+	background:#ffffff;
+}
+#top { margin:0; padding:0 ; width:1003px;  }
+
+/* =header / divisions
+----------------------------------------------------------------------------------------- */
+#header{ background:#000; height:25px; margin:0; padding:0; width:1003px; position:absolute;
+	filter:alpha(opacity=70);
+	opacity: 0.7;
+	z-index:150;
+	-moz-opacity:0.7;}
+#header li{ float:left; padding:0 20px 0 0; }
+
+#header input { height:12px;  }
+
+/* =banner / divisions
+----------------------------------------------------------------------------------------- */
+#banner{ background:url(/images/profile.gif) no-repeat; height:1300px; margin:0; padding:0; width:1003px;  }
+#banner h1{ font:12px arial; color:#243a5d; }
+.banner_text {
+	position:relative;
+	top:100px;
+	left:160px;
+	width:750px;
+}
+#banner a{ font: bold 12px arial; color:#243a5d; }
+#banner a:hover{ font: bold 12px arial; color:#243a5d; text-decoration:underline; }
+/* =left / divisions
+----------------------------------------------------------------------------------------- */
+#left{
+	background:url(/images/leftbg.png) repeat-y;
+	margin:0;
+	padding:0;
+	height:1000px;
+	width:138px;
+	position:absolute;
+	top:24px;
+	z-index:150px;
+}
+
+.logo { text-align:center; padding: 10px 0 10px 0; }
+
+.div_menu { width:110px; display:block; height:30px; background:#79a1cd; -moz-border-radius:0 3px 3px 0px; -webkit-border-radius:0 3px 3px 0; -khtml-border-radius:0 3px 3px 0; border-radius: 0 3px 3px 0; text-align:right; padding:0 10px 0 0;
+			color:#ffffff; font:bold 12px arial; line-height:30px; margin:10px 0 10px 0; opacity:1; cursor:pointer;}
+			
+.submenu {display:none; width:240px; left:120px; bottom:29px;  position:relative; color:#000; padding:0 20px 40px 0; border:solid 1px #79a1cd; border-bottom:solid 1px #a5bbc9; border-right:solid 1px #a5bbc9; background:#e9f2fa bottom url(/images/seb-bg1.png) no-repeat; }
+.submenu2 {display:none; width:240px; left:120px; bottom:29px;  position:relative; color:#000; padding:0 20px 40px 0; border:solid 1px #79a1cd; border-bottom:solid 1px #a5bbc9; border-right:solid 1px #a5bbc9; background:#e9f2fa bottom url(/images/seb-bg2.png) no-repeat; }
+.submenu3 {display:none; width:240px; left:120px; bottom:29px;  position:relative; color:#000; padding:0 20px 40px 0; border:solid 1px #79a1cd; border-bottom:solid 1px #a5bbc9; border-right:solid 1px #a5bbc9; background:#e9f2fa bottom url(/images/seb-bg3.png) no-repeat; }
+
+#con1 a, #tec1 a, #ser1 a{ font:bold 12px arial; color:#000; }
+#con1 a:hover, #tec1 a:hover, #ser1 a:hover{ font:bold 12px arial; color:#000;  }
+#con1 p,#tec1 p, #ser1 p { padding:5px 0;}
+			
+#social ul{ margin:0; padding:0 0 0 10px;}
+
+#social li{ margin:0; padding:0 5px 0 0; list-style-type:none; float:left; }
+
+#news {padding:0px 0 0 10px; margin-top:5px;}
+#news li{ list-style-type:none; background:url(/images/arrows.gif) no-repeat; padding:0 0 3px 10px; background-position:0 3px; font:11px arial; color:#ffffff;}
+/* =bottom / divisions
+----------------------------------------------------------------------------------------- */
+#bottom { height:167px; width:865px;   margin:0 0 0 138px; padding:0; color:#333; }
+.bottom_pic { margin:0; padding:0; }
+.bottom_pic li{ float:left; margin:0; padding:0;  }
+
+/* =footer / divisions
+----------------------------------------------------------------------------------------- */
+#footer { height:30px; background:#333; text-align:center; font:10px arial; color:#ffffff; }
+
+.bottom_pic li{ float:left; }
+
+ .div_menu, .div_menu div 
+{
+    z-index:999;
+}

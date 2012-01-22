@@ -1,0 +1,127 @@
+.full-width
+{
+	width: 890px;
+	overflow: hidden;
+	font: normal 11px Arial, sans-serif;
+	text-shadow: 1px 1px #272727;
+	padding: 5px;
+	background: #1A3D13;
+	min-height: 300px;
+}
+.full-width A.read-more
+{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin-bottom: 5px;
+}
+H5
+{
+	font: normal 14px sans-serif;
+}
+H6
+{
+	font: normal 12px Arial, sans-serif;
+}
+.full-width H4, H5, H6
+{
+	text-align: left;
+	letter-spacing: 1px;
+	padding: 5px;
+	margin: 0px;
+	color: #CFE3CB;
+}
+.full-width H4
+{
+	font: normal 16px Arial, sans-serif;
+	margin-left: 20px;
+}
+.full-width P
+{
+	margin-bottom: 5px;
+	overflow: hidden;
+	text-align: left;
+	margin: 0px;
+	padding: 5px;
+	color: #AAA;
+	font: 1em Arial;
+}
+.full-width H5
+{
+	height: 50px;
+	overflow: hidden;
+}
+.one-half, .one-third, .two-thirds, .one-fourth, .three-fourths
+{
+	display: inline;
+	float: left;
+	margin: 5px;
+	margin-left: 12px;
+}
+.one-fourth
+{
+	width: 200px;
+	border: 2px solid #404E3D;
+}
+.clearfix:after
+{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	width: 0;
+}
+* HTML .clearfix
+{
+	zoom: 1;
+}
+/*IE6*/
+*:first-child+HTML .clearfix
+{
+	zoom: 1;
+}
+/*IE7*/
+A IMG
+{
+	display: block;
+}
+.zoom-image IMG, .zoom-video IMG
+{
+	display: block;
+	height: 150px;
+	width: 190px;
+	padding: 5px;
+}
+.zoom-image
+{
+	margin: 0px;
+	display: block;
+}
+.zoom-video
+{
+	background: url("/images/zoom-video.png") no-repeat 50% 50%;
+	display: block;
+	overflow: hidden;
+}
+.img-sha-217
+{
+	margin: 0;
+}
+.img-border
+{
+	padding: 5px;
+}
+.prod_desc
+{
+	height: 40px;
+	overflow: hidden;
+	margin-left: -25px;
+}
+.add_cart_btn
+{
+	text-align: right;
+	color: #AAAAAA;
+	margin-right: 5px;
+}

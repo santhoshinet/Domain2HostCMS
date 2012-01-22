@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" %>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>
+        <asp:ContentPlaceHolder ID="PageTitle" runat="server" />
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link type="text/css" rel="stylesheet" media="all" href="/content/style.css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</head>
+<body id="home">
+    <!-- Header -->
+    <div id="header">
+        <!-- Secondary -->
+        <div class="seclinks wrp">
+            <div class="contact lflot">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Call
+                Us: +91 9841334433</div>
+            <ul class="menu">
+                <% if (Request.IsAuthenticated)
+                   { %>
+                <li class="left first active-trail"><a href="/controlpanel/Images" title="Manage Images">
+                    Images</a></li>
+                <li class="left"><a href="/controlpanel/Pages" title="Manage Pages">Pages</a></li>
+                <li class="left"><a href="/controlpanel/Menus" title="Manage Menus">Menus</a></li>
+                <li class="left">&nbsp;</li>
+                <li class="leaf first">
+                    <%= Request.LogonUserIdentity.Name %></li>
+                <li class="leaf"><a href="/LogOut" title="Logout">Logout</a></li>
+                <%
+                    }
+                   else
+                   {%>
+                <li class="leaf active-trail"><a href="/LogIn" title="Login">Login</a></li>
+                <%
+                    } %>
+            </ul>
+        </div>
+        <!-- Secondary -->
+    </div>
+    <div class="banner">
+        <!-- Primary -->
+        <div class="prilinks">
+            <div class="logo lfloat">
+                <a href="/">Domain2host</a></div>
+        </div>
+        <!-- /Primary -->
+    </div>
+    <div class="clear">
+    </div>
+    <!-- /Header -->
+    <!-- Masthead -->
+    <div class="content_placeholder">
+        <div class="content_holder">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+    </div>
+    <div class="strip_holder">
+        <a href="#">
+            <img src="/images/brandlogo.png" hspace="10" alt="Services" /></a>
+    </div>
+    <!-- /Masthead -->
+    <!-- Footer -->
+    <div id="footer" class="clear">
+        <div class="wrp">
+            <div class="rfloat">
+            </div>
+            <p>
+                &copy; 2011 domain2host. All rights Reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
+<!-- scripts at bottom for speed loading the page -->

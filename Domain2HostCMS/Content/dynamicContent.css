@@ -1,0 +1,33 @@
+A:link
+{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+A:visited
+{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+A:hover
+{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+A:active
+{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.banner_text DIV
+{
+	color: #000000;
+	height: auto;
+}
+.space
+{
+	height: 40px;
+}
+.banner
+{
+	height: auto;
+}

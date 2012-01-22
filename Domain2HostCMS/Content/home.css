@@ -1,0 +1,97 @@
+*
+{
+	padding: 0px;
+	margin: 0px;
+}
+BODY
+{
+	margin: 0px;
+	font: 1em Arial;
+	padding: 10px 0px 0px;
+	background: #0F1B1B;
+}
+.content
+{
+	padding: 0px;
+	width: 1500px;
+	padding: 0px;
+	width: 700px;
+	margin: 0px auto;
+}
+.clear
+{
+	clear: both;
+	float: none;
+}
+#Menu UL
+{
+	list-style: none;
+}
+#Menu UL LI
+{
+	float: left;
+	margin-right: 5px;
+}
+#Menu A
+{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#Menu
+{
+	background-color: #96B9A6;
+	padding: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font: 0.9em Arial;
+}
+#Menu UL
+{
+	list-style: none;
+}
+#Menu UL LI
+{
+	float: left;
+	margin-right: 5px;
+}
+#Menu A
+{
+	text-decoration: none;
+	color: #EEE;
+}
+#TblContainer
+{
+	padding: 0px;
+	margin: 0 auto;
+	width: 909px;
+	text-align: center;
+	background-color: #FBFBFA;
+}
+#TblContainer TR, TD
+{
+	width: 100%;
+	height: 100%;
+}
+.banner
+{
+	width: 907px;
+	margin: -6px 0px -3px;
+}
+#Logo IMG
+{
+	width: auto;
+	border: 0px solid #000000;
+	margin: -2px 0 0;
+}
+#BottonStrip
+{
+	background-color: #356363;
+}
+#BottonStrip TD
+{
+	height: 25px;
+}
+#ContentPlaceHolder
+{
+	text-align: left;
+}

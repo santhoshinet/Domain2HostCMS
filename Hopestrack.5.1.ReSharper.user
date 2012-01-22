@@ -1,0 +1,44 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Views/d:Shared/f:Site.Master" caret="0" fromTop="0" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Scripts/f:SpryMenuBar.js" caret="0" fromTop="0" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Scripts/f:JQValidation.js" caret="0" fromTop="0" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:AccountController.cs" caret="0" fromTop="0" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="0" fromTop="0" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:HomeController.cs" caret="0" fromTop="0" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ProfilesController.cs" caret="0" fromTop="0" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Content/f:Ajaxaddimage.css" caret="0" fromTop="0" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Content/f:dynamicContent.css" caret="0" fromTop="0" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Content/f:FormLayout.css" caret="0" fromTop="0" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Content/f:home.css" caret="0" fromTop="0" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Content/f:layout.css" caret="0" fromTop="0" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Content/f:layout1.css" caret="0" fromTop="0" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Content/f:products.css" caret="0" fromTop="0" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Content/f:profile.css" caret="0" fromTop="0" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Content/f:stylesheet_default.css" caret="0" fromTop="0" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="2863" fromTop="8" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="7598" fromTop="8" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

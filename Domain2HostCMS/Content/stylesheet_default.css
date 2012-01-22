@@ -1,0 +1,380 @@
+.input
+{
+	font-size: 10pt;
+	border-top-style: inset;
+	font-family: Arial, "ms sans serif";
+	border-right-style: inset;
+	border-left-style: inset;
+	background-color: #FFFFFF;
+	border-bottom-style: inset;
+}
+.link1
+{
+	padding-right: 2px;
+	padding-left: 0px;
+	font-size: 12px;
+	padding-bottom: 8px;
+	color: #636363;
+	padding-top: 8px;
+	font-family: Arial, "ms Sans serif";
+	border-bottom: 1px solid #41463F;
+	text-align: justify;
+}
+.link1 A
+{
+	color: #636363;
+	text-decoration: none;
+}
+.link1 A:hover
+{
+	color: #636363;
+	text-decoration: underline;
+}
+IMG
+{
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-bottom-width: 0px;
+	border-right-width: 0px;
+}
+BODY
+{
+	background-color: #000000;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	margin: 0px;
+	padding-top: 0px;
+	font: 1em Arial;
+}
+.text
+{
+	padding-right: 20px;
+	padding-left: 20px;
+	font-size: 12px;
+	padding-bottom: 10px;
+	color: #636363;
+	line-height: 17px;
+	padding-top: 0px;
+	font-family: Arial, "ms Sans serif";
+	text-align: justify;
+}
+.text A
+{
+	color: #636363;
+	text-decoration: underline;
+}
+.text A:hover
+{
+	color: #636363;
+	text-decoration: none;
+}
+.req
+{
+	padding-right: 0px;
+	padding-left: 0px;
+	font-size: 13px;
+	padding-bottom: 0px;
+	color: #003F80;
+	padding-top: 0px;
+	font-family: Calibri;
+}
+<<<<<<< HEAD
+=======
+.loginContent
+{
+	font-size: 0.75em;
+	font-family: Arial, Helvetica, Sans-Serif;
+	padding: 10px;
+	margin: 0px;
+	min-height: 400px;
+}
+.loginContent P, UL
+{
+	margin: 0px;
+	padding: 0px;
+}
+>>>>>>> b7262333ba84fa5c70d753716486d7c2b8bda68c
+.loginContent FIELDSET
+{
+	margin: 1em 0;
+	padding: 1em;
+	border: 1px solid #CCC;
+}
+.loginContent FIELDSET P
+{
+	margin: 2px 0 10px;
+}
+.loginContent LEGEND
+{
+	font-size: 1.1em;
+	font-weight: 600;
+	padding: 2px 4px 8px;
+}
+.loginContent INPUT[type="text"], INPUT[type="password"], TEXTAREA, INPUT[type="file"]
+{
+	width: 385px;
+	padding: 5px;
+	margin: 0px;
+	background-color: #EBF8F2;
+	border: 1px solid #A8E1C7;
+}
+.loginContent SELECT
+{
+	width: 400px;
+	padding: 3px;
+	margin: 0px;
+}
+.loginContent TABLE
+{
+	border: 1px solid #E8EEF4;
+	border-collapse: collapse;
+}
+.loginContent TABLE TD
+{
+	padding: 5px;
+	border: 1px solid #E8EEF4;
+}
+.loginContent TABLE TH
+{
+	padding: 6px 5px;
+	text-align: left;
+	background-color: #EBF8F2;
+	border: 1px solid #E8EEF4;
+}
+.loginContent #menucontainer
+{
+	margin-top: 40px;
+}
+.loginContent DIV#title
+{
+	display: block;
+	float: left;
+	text-align: left;
+}
+/*MISC
+----------------------------------------------------------*/
+.clear
+{
+	clear: both;
+}
+.error
+{
+	color: #FF0000;
+}
+/*Styles for editor and display helpers
+----------------------------------------------------------*/
+.display-label, .editor-label, .display-field, .editor-field
+{
+	margin: 0.5em 0;
+}
+.loginContent .text-box
+{
+	width: 30em;
+}
+.loginContent .text-box.multi-line
+{
+	height: 6.5em;
+}
+.loginContent .tri-state
+{
+	width: 6em;
+}
+.UserInfo
+{
+	text-align: right;
+	text-decoration: none;
+	padding-right: 5px;
+}
+.UserInfo *
+{
+	padding: 3px;
+}
+.UserInfo A
+{
+	text-decoration: none;
+	font: 1em Arial;
+	color: #AAA;
+}
+.checkout
+{
+	padding-top: 15px;
+	padding-left: 5px;
+}
+.loginContent .rightbox
+{
+	text-align: right;
+	margin: 0px;
+	padding: 5px;
+}
+.empty-row TD
+{
+	text-align: center;
+	height: 30px;
+}
+.edit_confirm_button, .delete_button, .edit_button, .edit_cancel_button, .restore_button
+{
+	cursor: pointer;
+}
+INPUT[type="button"], INPUT[type="submit"]
+{
+	border: 1px solid #666;
+	padding: 5px;
+	cursor: pointer;
+	width: 100px;
+	margin-top: 5px;
+	background: #444;
+	text-align: center;
+}
+.container
+{
+	margin: 10px -5px;
+	padding: 0px;
+}
+.container .left, .right, .middle
+{
+	float: left;
+	width: 163px;
+	background: #222;
+	padding: 10px;
+	margin: 5px 5px 5px 35px;
+	text-align: center;
+}
+.container .middle
+{
+	float: none;
+	width: 845px;
+}
+.container .right
+{
+	text-align: center;
+}
+.small
+{
+	height: 425px;
+}
+.product_image
+{
+	cursor: pointer;
+	width: 200px;
+	height: 150px;
+}
+.loginContent UL LI
+{
+	margin-top: 5px;
+}
+.delivery
+{
+	display: none;
+}
+.field-validation-error
+{
+	color: #FF0000;
+}
+.Cart_Table_Sub INPUT
+{
+	width: 60px;
+}
+.Cart_Table_Sub SELECT
+{
+	width: 85px;
+}
+.Cart_Table TR:even
+{
+	background-color: #777;
+}
+.Content
+{
+	min-height: 600px;
+	background: #000000;
+}
+.Content *
+{
+	color: #AAA;
+	text-align: left;
+}
+.Content H2, H3, H4, H5, H6
+{
+}
+.Content H2
+{
+	font: 1.5em Arial;
+	padding-left: 18px;
+}
+.Content H3
+{
+	font: 1.2em Arial;
+	padding-left: 17px;
+}
+.Content P
+{
+	color: #888;
+	font: 1em Arial;
+	padding-left: 30px;
+}
+.Content UL LI UL LI UL LI
+{
+	padding-left: 30px;
+	color: #AAA;
+}
+.controlpanel_home
+{
+	text-align: right;
+}
+.controlpanel_home A
+{
+	text-decoration: none;
+	color: #777;
+}
+.searchbox
+{
+	text-align: right;
+	margin-bottom: 5px;
+}
+#txtsearchcriteria
+{
+	width: 200px;
+}
+#noresultsrow
+{
+	display: none;
+	text-align: center;
+}
+.highlight
+{
+	background-color: #FFFF00;
+}
+.validation-summary-errors
+{
+	color: #FF0000;
+}
+.introduction P
+{
+	font: 1em Arial;
+	color: #828282;
+}
+.perfect-gift
+{
+	font: 1.4em Arial;
+	color: #8FA971;
+	margin-top: 20px;
+	margin: 10px;
+}
+.headers
+{
+	margin-left: 25px;
+	background: #080808;
+	padding-left: 10px;
+	margin-bottom: 5px;
+}
+.headers A
+{
+	text-decoration: none;
+	color: #AAA;
+}
+.headers P
+{
+	padding: 0px;
+	margin: 0px;
+	margin-left: 10px;
+}

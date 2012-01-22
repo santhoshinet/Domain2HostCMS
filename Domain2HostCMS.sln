@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain2HostCMS", "Domain2HostCMS\Domain2HostCMS.csproj", "{BCE74F21-B02D-4DCE-8CC0-870255512739}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain2HostCMSConsole", "Domain2HostCMSConsole\Domain2HostCMSConsole.csproj", "{175E1575-1B52-4567-BBAC-774C23F2799E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain2HostCMSDL", "Domain2HostCMSDL\Domain2HostCMSDL.csproj", "{AD1F532C-A9F4-4326-866F-4FA4EE9566C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCE74F21-B02D-4DCE-8CC0-870255512739}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCE74F21-B02D-4DCE-8CC0-870255512739}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCE74F21-B02D-4DCE-8CC0-870255512739}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCE74F21-B02D-4DCE-8CC0-870255512739}.Release|Any CPU.Build.0 = Release|Any CPU
+		{175E1575-1B52-4567-BBAC-774C23F2799E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{175E1575-1B52-4567-BBAC-774C23F2799E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{175E1575-1B52-4567-BBAC-774C23F2799E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{175E1575-1B52-4567-BBAC-774C23F2799E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD1F532C-A9F4-4326-866F-4FA4EE9566C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD1F532C-A9F4-4326-866F-4FA4EE9566C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD1F532C-A9F4-4326-866F-4FA4EE9566C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD1F532C-A9F4-4326-866F-4FA4EE9566C5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

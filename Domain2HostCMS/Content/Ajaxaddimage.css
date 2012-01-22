@@ -1,0 +1,85 @@
+﻿BODY
+{
+    background-color: #444;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+    padding-top: 0px;
+    font: 1em Arial;
+}
+.loginContent
+{
+    background-color: #444;
+    font-size: 0.75em;
+    font-family: Arial, Helvetica, Sans-Serif;
+    padding: 15px;
+    margin: 0px;
+}
+.loginContent P, UL
+{
+    margin: 0px;
+    padding: 0px;
+}
+.loginContent INPUT[type="text"], INPUT[type="password"], TEXTAREA, INPUT[type="file"]
+{
+    width: 385px;
+    padding: 5px;
+    margin: 0px;
+    background-color: #EBF8F2;
+    border: 1px solid #A8E1C7;
+}
+.loginContent DIV#title
+{
+    display: block;
+    float: left;
+    text-align: left;
+}
+/*MISC
+----------------------------------------------------------*/
+.clear
+{
+    clear: both;
+}
+.error
+{
+    color: #FF0000;
+}
+/*Styles for editor and display helpers
+----------------------------------------------------------*/
+.display-label, .editor-label, .display-field, .editor-field
+{
+    margin: 0.5em 0;
+}
+.empty-row TD
+{
+    text-align: center;
+    height: 30px;
+}
+.edit_confirm_button, .delete_button, .edit_button, .edit_cancel_button, .restore_button
+{
+    cursor: pointer;
+}
+INPUT[type="button"], INPUT[type="submit"]
+{
+    border: 1px solid #666;
+    padding: 5px;
+    cursor: pointer;
+    width: 100px;
+    margin-top: 5px;
+    background: #888;
+    text-align: center;
+}
+.loginContent UL
+{
+    list-style: none;
+    margin-left: 10px;
+}
+.loginContent UL LI
+{
+    margin-top: 5px;
+}
+.field-validation-error
+{
+    color: #FF0000;
+}
