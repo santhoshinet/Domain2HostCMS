@@ -19,14 +19,9 @@
   </configSections>
   <appSettings />
   <connectionStrings>
-    <add name="ApplicationServices1" connectionString="data source=.\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|aspnetdb.mdf;User Instance=true" providerName="System.Data.SqlClient" />
-    <add name="ApplicationServices" connectionString="Data Source=208.91.198.196;Initial Catalog=admin_domain2hostcms;Persist Security Info=True;User ID=domain2hostcms;Password=password@123" providerName="System.Data.SqlClient" />
-    <add name="DatabaseConnection1" connectionString="Data Source=208.91.198.196;Initial Catalog=admin_domain2hostcms;Persist Security Info=True;User ID=domain2hostcms;Password=password@123" />
+    <add name="ApplicationServices" connectionString="data source=.\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|aspnetdb.mdf;User Instance=true" providerName="System.Data.SqlClient" />
   </connectionStrings>
   <system.web>
-    <!--
-    <httpRuntime requestValidationMode="2.0" />
-    -->
     <identity impersonate="true" />
     <!--
             Set compilation debug="true" to insert debugging

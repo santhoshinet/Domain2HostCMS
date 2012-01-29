@@ -6,7 +6,7 @@ namespace Domain2HostCMSConsole
     {
         private static void Main()
         {
-            using (var connection = new SqlConnection("Data Source=208.91.198.196;Initial Catalog=admin_hopestrack;Persist Security Info=True;User ID=hopestrack;Password=password@123"))
+            using (var connection = new SqlConnection("Data Source=208.91.198.196;Initial Catalog=admin_domain2hostcms;Persist Security Info=True;User ID=domain2hostcms;Password=password@123"))
             {
                 connection.Open();
                 ExecuteQry(@" drop table [content_page]", connection);
@@ -15,10 +15,11 @@ namespace Domain2HostCMSConsole
     [<_content>k___backing_field] VARCHAR(MAX) NULL,
     [<_id>k___backing_field] VARCHAR(255) NULL,
     [<_name>k___backing_field] VARCHAR(255) NULL,
+    [<_dmain_name>k___backing_field] VARCHAR(MAX) NULL,
     [voa_version] SMALLINT NOT NULL,
     CONSTRAINT [pk_content_page] PRIMARY KEY ([content_page_id])
             )", connection);
-                ExecuteQry("delete from mnu", connection);
+                //ExecuteQry("delete from mnu", connection);
                 connection.Close();
             }
         }

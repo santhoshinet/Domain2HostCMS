@@ -33,7 +33,7 @@
   <ItemGroup>
     <Reference Include="Domain2HostCMSDL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\HopestrackDL\bin\Debug\Domain2HostCMSDL.dll</HintPath>
+      <HintPath>..\Domain2HostCMSDL\bin\Debug\Domain2HostCMSDL.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">

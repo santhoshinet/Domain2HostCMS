@@ -8,9 +8,6 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Views/d:Shared/f:Error.aspx" caret="524" fromTop="11" />
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Views/d:Controlpanel/f:Images.aspx" caret="976" fromTop="24" />
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Views/d:Controlpanel/f:EditPage.aspx" caret="210" fromTop="2" />
       <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Views/d:Controlpanel/f:InsertImage.aspx" caret="351" fromTop="6" />
       <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Views/d:Controlpanel/f:menus.aspx" caret="757" fromTop="19" />
       <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Views/d:Controlpanel/f:Pages.aspx" caret="663" fromTop="0" />
@@ -23,53 +20,50 @@
       <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Views/d:Controlpanel/f:Index.aspx" caret="653" fromTop="15" />
       <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Views/d:Controlpanel/f:AddMenu.aspx" caret="2946" fromTop="38" />
       <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Views/d:Controlpanel/f:AddPage.aspx" caret="1550" fromTop="30" />
-      <File id="AD1F532C-A9F4-4326-866F-4FA4EE9566C5/f:Attachment.cs" caret="256" fromTop="12" />
-      <File id="AD1F532C-A9F4-4326-866F-4FA4EE9566C5/f:ContentPage.cs" caret="294" fromTop="13" />
-      <File id="AD1F532C-A9F4-4326-866F-4FA4EE9566C5/f:Images.cs" caret="340" fromTop="15" />
-      <File id="AD1F532C-A9F4-4326-866F-4FA4EE9566C5/f:Menu.cs" caret="405" fromTop="18" />
-      <File id="AD1F532C-A9F4-4326-866F-4FA4EE9566C5/f:UserAuthentication.cs" caret="113" fromTop="5" />
       <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Content/f:FormLayout.css" caret="2371" fromTop="28" />
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Views/d:Shared/f:Site.Master" caret="1989" fromTop="22" />
       <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Models/f:AccountModels.cs" caret="1428" fromTop="10" />
       <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:AccountController.cs" caret="945" fromTop="22" />
       <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Views/d:Account/f:Register.aspx" caret="1012" fromTop="21" />
       <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:HomeController.cs" caret="626" fromTop="18" />
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/f:Utilities.cs" caret="130" fromTop="5" />
       <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Views/d:Shared/f:Status.aspx" caret="638" fromTop="17" />
       <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Views/d:Account/f:LogOn.aspx" caret="830" fromTop="0" />
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="35141" fromTop="39" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/f:ObjectScopeProvider1.cs" caret="0" fromTop="0" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Views/d:Shared/f:Site.Master" caret="1490" fromTop="21" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/f:Web.config" caret="1734" fromTop="22" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="26502" fromTop="39" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/f:Utilities.cs" caret="147" fromTop="6" />
     </RecentFiles>
     <RecentEdits>
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="30505" fromTop="10" />
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="31179" fromTop="21" />
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="31762" fromTop="13" />
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="32436" fromTop="24" />
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="34248" fromTop="19" />
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="34248" fromTop="7" />
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="17060" fromTop="15" />
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="35143" fromTop="17" />
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="15106" fromTop="5" />
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="35597" fromTop="19" />
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="35844" fromTop="19" />
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="1268" fromTop="19" />
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="2821" fromTop="22" />
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="4784" fromTop="25" />
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="5183" fromTop="30" />
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="5894" fromTop="38" />
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="6841" fromTop="19" />
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="8593" fromTop="19" />
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="8955" fromTop="23" />
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="9297" fromTop="27" />
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="11433" fromTop="19" />
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="11804" fromTop="24" />
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="12479" fromTop="33" />
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="18192" fromTop="19" />
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="24829" fromTop="19" />
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="34036" fromTop="19" />
-      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="35410" fromTop="30" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="35623" fromTop="19" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="35870" fromTop="19" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="1298" fromTop="19" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="2851" fromTop="22" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="4814" fromTop="25" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="5213" fromTop="30" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="5924" fromTop="38" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="6871" fromTop="19" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="8623" fromTop="19" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="8985" fromTop="23" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="9327" fromTop="27" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="11463" fromTop="19" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="11834" fromTop="24" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="12509" fromTop="33" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="18222" fromTop="19" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="24859" fromTop="19" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="34062" fromTop="19" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="35436" fromTop="30" />
       <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Views/d:Shared/f:Status.aspx" caret="305" fromTop="6" />
       <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Views/d:Shared/f:Status.aspx" caret="638" fromTop="16" />
       <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Views/d:Shared/f:Status.aspx" caret="665" fromTop="19" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/f:ObjectScopeProvider1.cs" caret="0" fromTop="0" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/f:Utilities.cs" caret="283" fromTop="8" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Views/d:Shared/f:Site.Master" caret="1490" fromTop="21" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/f:Web.config" caret="2042" fromTop="26" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="26077" fromTop="29" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="28389" fromTop="32" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="25791" fromTop="29" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/d:Controllers/f:ControlpanelController.cs" caret="27979" fromTop="8" />
+      <File id="BCE74F21-B02D-4DCE-8CC0-870255512739/f:Utilities.cs" caret="147" fromTop="6" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -92,12 +86,12 @@
       <Item value="public" priority="3" />
       <Item value="string" priority="6" />
       <Item value="static" priority="0" />
-      <Item value="return" priority="3" />
+      <Item value="return" priority="5" />
       <Item value="System" priority="0" />
       <Item value="Uri`0" priority="0" />
-      <Item value="var" priority="4" />
+      <Item value="var" priority="5" />
       <Item value="new" priority="1" />
-      <Item value="uri" priority="0" />
+      <Item value="uri" priority="1" />
       <Item value="ObjectScopeProvider1`0" priority="1" />
       <Item value="ctx" priority="0" />
       <Item value="from" priority="0" />
@@ -108,7 +102,7 @@
       <Item value="model" priority="2" />
       <Item value="select" priority="0" />
       <Item value="Utilities`0" priority="2" />
-      <Item value="if" priority="4" />
+      <Item value="if" priority="5" />
       <Item value="User" priority="5" />
       <Item value="users" priority="0" />
       <Item value="else" priority="3" />
@@ -122,6 +116,8 @@
       <Item value="RedirectToAction`0" priority="2" />
       <Item value="page" priority="0" />
       <Item value="null" priority="1" />
+      <Item value="domains" priority="1" />
+      <Item value="Length" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.HttpRequest">
       <Item value="IsAuthenticated" priority="0" />
@@ -137,7 +133,7 @@
     <ItemStatistics item="Qualified:System.Uri">
       <Item value="Segments" priority="0" />
       <Item value="ToString`0" priority="0" />
-      <Item value="Host" priority="0" />
+      <Item value="Host" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@Domain2HostCMS.ObjectScopeProvider1">
       <Item value="GetNewObjectScope`0" priority="1" />
@@ -157,6 +153,8 @@
     <ItemStatistics item="Qualified:System.String">
       <Item value="ToLower`0" priority="23" />
       <Item value="Equals`0" priority="10" />
+      <Item value="Split`0" priority="0" />
+      <Item value="Replace`0" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Domain2HostCMS.Models.LogOnModel">
       <Item value="UserName" priority="0" />

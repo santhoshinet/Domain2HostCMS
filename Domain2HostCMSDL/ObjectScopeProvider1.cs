@@ -27,10 +27,18 @@ namespace Domain2HostCMSDL
     /// </remarks>
     public class ObjectScopeProvider1 : IObjectScopeProvider
     {
-        private Database _myDatabase;
-        private IObjectScope _myScope;
+        private Database myDatabase;
+        private IObjectScope myScope;
 
-        static private ObjectScopeProvider1 _theObjectScopeProvider1;
+        static private ObjectScopeProvider1 theObjectScopeProvider1;
+
+        /// <summary>
+        /// Constructor.
+        /// </summary>
+        /// <remarks></remarks>
+        public ObjectScopeProvider1()
+        {
+        }
 
         /// <summary>
         /// Adjusts for dynamic loading when no entry assembly is available/configurable.
@@ -42,10 +50,10 @@ namespace Domain2HostCMSDL
         /// </remarks>
         static public void AdjustForDynamicLoad()
         {
-            if (_theObjectScopeProvider1 == null)
-                _theObjectScopeProvider1 = new ObjectScopeProvider1();
+            if (theObjectScopeProvider1 == null)
+                theObjectScopeProvider1 = new ObjectScopeProvider1();
 
-            if (_theObjectScopeProvider1._myDatabase == null)
+            if (theObjectScopeProvider1.myDatabase == null)
             {
                 string assumedInitialConfiguration =
                            "<openaccess>" +
@@ -53,16 +61,16 @@ namespace Domain2HostCMSDL
                                    "<reference assemblyname='PLACEHOLDER' configrequired='True'/>" +
                                "</references>" +
                            "</openaccess>";
-                System.Reflection.Assembly dll = _theObjectScopeProvider1.GetType().Assembly;
+                System.Reflection.Assembly dll = theObjectScopeProvider1.GetType().Assembly;
                 assumedInitialConfiguration = assumedInitialConfiguration.Replace(
                                                     "PLACEHOLDER", dll.GetName().Name);
-                var xmlDoc = new System.Xml.XmlDocument();
+                System.Xml.XmlDocument xmlDoc = new System.Xml.XmlDocument();
                 xmlDoc.LoadXml(assumedInitialConfiguration);
                 Database db = Telerik.OpenAccess.Database.Get("DatabaseConnection1",
                                             xmlDoc.DocumentElement,
-                                            new[] { dll });
+                                            new System.Reflection.Assembly[] { dll });
 
-                _theObjectScopeProvider1._myDatabase = db;
+                theObjectScopeProvider1.myDatabase = db;
             }
         }
 
@@ -74,11 +82,13 @@ namespace Domain2HostCMSDL
         /// <remarks></remarks>
         static public Database Database()
         {
-            if (_theObjectScopeProvider1 == null)
-                _theObjectScopeProvider1 = new ObjectScopeProvider1();
+            if (theObjectScopeProvider1 == null)
+                theObjectScopeProvider1 = new ObjectScopeProvider1();
 
-            return _theObjectScopeProvider1._myDatabase ??
-                   (_theObjectScopeProvider1._myDatabase = Telerik.OpenAccess.Database.Get("DatabaseConnection1"));
+            if (theObjectScopeProvider1.myDatabase == null)
+                theObjectScopeProvider1.myDatabase = Telerik.OpenAccess.Database.Get("DatabaseConnection1");
+
+            return theObjectScopeProvider1.myDatabase;
         }
 
         /// <summary>
@@ -90,7 +100,10 @@ namespace Domain2HostCMSDL
         {
             Database();
 
-            return _theObjectScopeProvider1._myScope ?? (_theObjectScopeProvider1._myScope = GetNewObjectScope());
+            if (theObjectScopeProvider1.myScope == null)
+                theObjectScopeProvider1.myScope = GetNewObjectScope();
+
+            return theObjectScopeProvider1.myScope;
         }
 
         /// <summary>

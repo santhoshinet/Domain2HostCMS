@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.IO;
 using System.Linq;
 using System.Web;
@@ -494,15 +495,14 @@ namespace Domain2HostCMS.Controllers
                     scope.Transaction.Commit();
                     try
                     {
-                        /*
-                        using (var connection = new SqlConnection("Data Source=208.91.198.196;Initial Catalog=admin_hopestrack;Persist Security Info=True;User ID=hopestrack;Password=password@123"))
+                        using (var connection = new SqlConnection("Data Source=208.91.198.196;Initial Catalog=admin_domain2hostcms;Persist Security Info=True;User ID=domain2hostcms;Password=password@123"))
                         {
                             connection.Open();
-                            string qry = "update content_page set [<_content>k___backing_field] = '" + pageModel.Content + "' where [<_id>k___backing_field]='" + page.Id + "'";
+                            string qry = "update content_page set [<_content>k___backing_field] = '" + pageModel.Content.Replace("'", "''") + "' where [<_id>k___backing_field]='" + page.Id + "'";
                             var command = new SqlCommand(qry, connection);
                             command.ExecuteNonQuery();
                             connection.Close();
-                        } */
+                        }
                     }
                     catch (Exception)
                     {
@@ -542,15 +542,14 @@ namespace Domain2HostCMS.Controllers
                 scope.Transaction.Commit();
                 try
                 {
-                    /*
-                    using (var connection = new SqlConnection("Data Source=208.91.198.196;Initial Catalog=admin_hopestrack;Persist Security Info=True;User ID=hopestrack;Password=password@123"))
+                    using (var connection = new SqlConnection("Data Source=208.91.198.196;Initial Catalog=admin_domain2hostcms;Persist Security Info=True;User ID=domain2hostcms;Password=password@123"))
                     {
                         connection.Open();
-                        string qry = "update content_page set [<_content>k___backing_field] = '" + adPageModel.Content + "' where [<_id>k___backing_field]='" + contentPage.Id + "'";
+                        string qry = "update content_page set [<_content>k___backing_field] = '" + adPageModel.Content.Replace("'", "''") + "' where [<_id>k___backing_field]='" + contentPage.Id + "'";
                         var command = new SqlCommand(qry, connection);
                         command.ExecuteNonQuery();
                         connection.Close();
-                    } */
+                    }
                 }
                 catch (Exception)
                 {

@@ -27,7 +27,7 @@
                 <li class="left"><a href="/controlpanel/Menus" title="Manage Menus">Menus</a></li>
                 <li class="left">&nbsp;</li>
                 <li class="leaf first">
-                    <%= Request.LogonUserIdentity.Name %></li>
+                    <%= Page.User.Identity.Name%></li>
                 <li class="leaf"><a href="/LogOut" title="Logout">Logout</a></li>
                 <%
                     }

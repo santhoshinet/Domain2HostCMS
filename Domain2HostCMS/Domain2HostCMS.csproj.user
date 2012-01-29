@@ -12,8 +12,8 @@
           <NativeDebugging>False</NativeDebugging>
           <SQLDebugging>False</SQLDebugging>
           <PublishCopyOption>AllFiles</PublishCopyOption>
-          <PublishTargetLocation>C:\Users\Santhosh\Desktop\MyWorks\D2H\Hopestrack\Publish\</PublishTargetLocation>
-          <PublishDeleteAllFiles>False</PublishDeleteAllFiles>
+          <PublishTargetLocation>C:\Users\Santhosh\Desktop\MyWorks\D2H\Domain2HostCMS\Publish\</PublishTargetLocation>
+          <PublishDeleteAllFiles>True</PublishDeleteAllFiles>
           <PublishCopyAppData>True</PublishCopyAppData>
           <ExternalProgram>
           </ExternalProgram>

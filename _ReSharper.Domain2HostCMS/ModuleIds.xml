@@ -1,4 +1,5 @@
 <Modules>
   <Module PersistentId="BCE74F21-B02D-4DCE-8CC0-870255512739" ModuleId="Domain2HostCMS" />
   <Module PersistentId="AD1F532C-A9F4-4326-866F-4FA4EE9566C5" ModuleId="Domain2HostCMSDL" />
+  <Module PersistentId="175E1575-1B52-4567-BBAC-774C23F2799E" ModuleId="Domain2HostCMSConsole" />
 </Modules>
